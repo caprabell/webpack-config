@@ -1,0 +1,42 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "Biblioteca do curso TDD",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --colors --progress",
+    "watch": "npm run build -- --watch",
+    "lint": "eslint src/*.js",
+    "precommit": "npm run lint",
+    "prepush": "npm run lint",
+    "test": "\u001b[D"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caprabell/js-tdd-course.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Mauricio Bell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caprabell/js-tdd-course/issues"
+  },
+  "homepage": "https://github.com/caprabell/js-tdd-course#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^0.14.3",
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0"
+  }
+}
