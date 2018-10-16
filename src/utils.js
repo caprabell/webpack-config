@@ -19,6 +19,8 @@ function div(a, b) {
 }
 
 export { mult, div };
+// ou export * as utils;
+// mas deve retirar todos os exports
 
 // método principal
 // somente um default por arquivo
