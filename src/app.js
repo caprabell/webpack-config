@@ -4,6 +4,9 @@
 
 //import * as R from 'ramda';
 import { union as junta, uniq } from 'ramda';
+
+import sum from './utils.js';
+
 const arr1 = [1,1,1,2,2,3,4,5,6,6];
 const arr2 = [5,6,6,6,7,7,8,9,10];
 
@@ -14,3 +17,5 @@ const arr4 =  uniq(arr2);
 console.log(arr3);
 
 console.log(arr4);
+
+console.log(sum(5,6));
