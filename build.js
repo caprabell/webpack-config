@@ -4778,14 +4778,37 @@ var where = /*#__PURE__*/__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__inte
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (immutable) */ __webpack_exports__["b"] = sub;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return mult; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return div; });
 function sum(a, b) {
   return a + b;
 }
 
-//método principal
-//somente um default por arquivo
-//importar com qualquer nome
-//não precisa usar chaves
+// named export
+// possibilidade de vários exports
+// só pode chamar com o nome
+// precisa das chaves { sub }
+function sub(a, b) {
+  return a - b;
+}
+
+function mult(a, b) {
+  return a * b;
+}
+
+
+
+function div(a, b) {
+  return a / b;
+}
+
+
+
+// método principal
+// somente um default por arquivo
+// importar com qualquer nome
+// não precisa usar chaves
 /* harmony default export */ __webpack_exports__["a"] = (sum);
 
 /***/ }),
@@ -5539,12 +5562,12 @@ function sum(a, b) {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ramda__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(119);
 // import método from 'biblioteca'
 // * carrega tudo da lib
 // as ==> alias para o método
 
-//import * as R from 'ramda';
+// import * as R from 'ramda';
 
 
 
@@ -5560,7 +5583,13 @@ console.log(arr3);
 
 console.log(arr4);
 
-console.log(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils_js__["a" /* default */])(5, 6));
+console.log(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils__["a" /* default */])(5, 6));
+
+console.log(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils__["b" /* sub */])(16, 6));
+
+console.log(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils__["c" /* mult */])(4, 4));
+
+console.log(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils__["d" /* div */])(6, 3));
 
 /***/ }),
 /* 122 */
