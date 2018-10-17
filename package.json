@@ -2,14 +2,14 @@
   "name": "js-tdd-course",
   "version": "1.0.0",
   "description": "Biblioteca do curso TDD",
-  "main": "app.js",
+  "main": "./src/app.js",
   "scripts": {
     "build": "webpack --colors --progress",
     "watch": "npm run build -- --watch",
     "lint": "eslint src/*.js",
     "precommit": "npm run lint",
     "prepush": "npm run lint",
-    "test": "\u001b[D"
+    "server": "webpack-dev-server --inline --open"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,8 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "husky": "^0.14.3",
-    "webpack": "^2.4.1"
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "ramda": "^0.25.0",

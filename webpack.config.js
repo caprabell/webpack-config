@@ -5,11 +5,12 @@ const webpack = require('webpack');
 const nodeENV = process.env.NODE_ENV || 'production';
 
 module.exports = {
+  devtool: 'source-map',
   entry: {
     filename: './src/app.js'
   },
   output: {
-    filename: './build.js'
+    filename: './dist/build.js'
   },
   module: {
     loaders: [
@@ -24,6 +25,11 @@ module.exports = {
         },
       },
     ],
+  },
+  devServer: {
+    inline: true,
+    contentBase: './src',
+    port: 6969,
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
