@@ -5,6 +5,9 @@
 // import * as R from 'ramda';
 import { union as junta, uniq } from 'ramda';
 
+import react from 'react';
+import reactDOM from 'react-dom';
+
 import sum, { sub, mult, div } from './utils';
 
 const arr1 = [1, 1, 1, 2, 2, 3, 4, 5, 6, 6];
